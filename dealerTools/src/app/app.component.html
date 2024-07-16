@@ -3,20 +3,22 @@
 <main>
     <ul>
         <li>
-            <app-tools [avitar]="allTools[0].avitar" [name]="allTools[0].name"/>
+            <app-tools [id]='allTools[0].id' [avitar]="allTools[0].avitar" [name]="allTools[0].name" (selectTool)="onSelectTool($event)"/>
         </li>
         <li>
-            <app-tools [avitar]="allTools[1].avitar" [name]="allTools[1].name"/>
+            <app-tools [id]='allTools[1].id' [avitar]="allTools[1].avitar" [name]="allTools[1].name" (selectTool)="onSelectTool($event)"/>
         </li>
         <li>
-            <app-tools [avitar]="allTools[2].avitar" [name]="allTools[2].name"/>
+            <app-tools [id]='allTools[2].id' [avitar]="allTools[2].avitar" [name]="allTools[2].name" (selectTool)="onSelectTool($event)"/>
         </li>
         <li>
-            <app-tools [avitar]="allTools[3].avitar" [name]="allTools[3].name"/>
+            <app-tools [id]='allTools[3].id' [avitar]="allTools[3].avitar" [name]="allTools[3].name" (selectTool)="onSelectTool($event)"/>
         </li>
         <li>
-            <app-tools [avitar]="allTools[4].avitar" [name]="allTools[4].name"/>
+            <app-tools [id]='allTools[4].id' [avitar]="allTools[4].avitar" [name]="allTools[4].name" (selectTool)="onSelectTool($event)"/>
         </li>
     </ul>
+
+    <app-tool-display [name]="selectedToolDescrition.name" [description]="selectedToolDescrition.description"/>
     
 </main>
